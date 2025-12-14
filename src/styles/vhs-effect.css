@@ -1,0 +1,107 @@
+.office-carpet {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #1a4d2e 0px,
+      #1a4d2e 2px,
+      #1e5735 2px,
+      #1e5735 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #1a4d2e 0px,
+      #1a4d2e 2px,
+      #1e5735 2px,
+      #1e5735 4px
+    );
+  background-color: #1a4d2e;
+}
+
+.vhs-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 40;
+  opacity: 0.03;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  animation: vhs-glitch 3s infinite;
+  overflow: hidden;
+}
+
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 40;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    transparent 1px,
+    transparent 2px
+  );
+  animation: scanline-drift 8s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes vhs-glitch {
+  0%, 90%, 100% {
+    opacity: 0.03;
+    transform: translateX(0);
+  }
+  92% {
+    opacity: 0.15;
+    transform: translateX(2px);
+  }
+  94% {
+    opacity: 0.05;
+    transform: translateX(-2px);
+  }
+}
+
+@keyframes scanline-drift {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes text-flicker {
+  0%, 100% {
+    text-shadow: 0 0 10px #F5E050, 0 0 20px #F5E050, 0 0 30px #F5E050;
+  }
+  50% {
+    text-shadow: 0 0 5px #F5E050, 0 0 10px #F5E050;
+  }
+}
+
+.text-impact {
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.font-times {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.crt-glow {
+  text-shadow:
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
+}

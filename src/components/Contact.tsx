@@ -126,6 +126,17 @@ function Contact() {
                   </div>
                 </div>
               </div>
+            
+            
+            <div className="bg-[#F5E050] border-4 border-black p-6">
+                <div className="flex items-center gap-4">
+                  <Mail className="w-8 h-8 text-[#D32F2F]" strokeWidth={3} />
+                  <div>
+                    <p className="font-times font-bold text-lg">GITHUB:</p>
+                    <a className = "font-times font-bold text-lg" href="https://github.com/ANNON17-byte/">ANNON17-byte</a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="mt-8 bg-[#D32F2F] text-white p-6 border-4 border-black text-center animate-pulse">

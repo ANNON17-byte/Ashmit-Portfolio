@@ -5,37 +5,41 @@ import { Code, Star, Zap } from 'lucide-react';
 
 const projects = [
   {
-    caseNumber: 'CASE #2024-001',
-    title: 'COMMERCE v. ABANDONED CART',
+    
+    title: 'K-72 Agency Website Clone',
     description: 'The Plaintiff Fights Fraud, The Defendant Pays in Full',
-    period: '2024',
-    verdict: 'GUILTY OF BEING FLAWLESS',
+    period: '2025',
+    verdict: 'GUILTY OF CLONING THE WEBSITE FULLY WITHOUT BEING FLAWLESS',
+    github:'https://github.com/ANNON17-byte/K72-Agency-Website-Clone',
     highlights: [
       'Prosecuted responsive React frontend with extreme prejudice',
-      'Supabase backend locked down tighter than a vault (PostgreSQL)',
-      'Stripe payment integration: 100% conviction rate',
-      '98% Lighthouse score—barely any room for appeal'
+      'GSAP animations smoother than legal precedent',
     ]
+    
   },
   {
-    caseNumber: 'CASE #2024-002',
-    title: 'WORKFLOW SUPREMACY',
-    description: 'A Real-Time Collaboration Scandal Exposed',
-    period: '2024',
-    verdict: 'DISMISSED IN FAVOR OF BRILLIANCE',
-    highlights: [
-      'Real-time task subscriptions that never sleep (Supabase magic)',
-      'Drag-and-drop UI so good it should be illegal',
-      'User authentication with iron-fisted role-based access control',
-      'CI/CD pipeline deployed with surgical precision'
-    ]
+  title: 'SLI ALARM — WAKE UP USING YOUR BRAIN',
+  description: 'A smart, cute alarm app that forces you to solve math problems to turn off the alarm — no brain, no snooze.',
+  period: '2025',
+  verdict: 'DISMISSED IN FAVOR OF PRODUCTIVITY',
+  github: 'https://github.com/ANNON17-byte/math-alarm', 
+  highlights: [
+    'Math-based alarm dismissal that guarantees you are awake',
+    'Multiple difficulty levels: Easy, Medium, Hard',
+    'Custom ringtone upload with default fallback alarm sound',
+    'Cute pink, cozy, mobile-first UI design',
+    'Native Android alarm scheduling with background & lock screen support',
+    'No snooze allowed without solving the math challenge'
+  ],
+
   },
   {
-    caseNumber: 'CASE #2024-003',
+  
     title: 'ASHMIT v. OBSCURITY',
     description: 'A Legal Precedent for Excellence in Personal Branding',
-    period: '2024',
+    period: '2025',
     verdict: 'EXTRAORDINARY RESULTS ACHIEVED',
+    github: 'https://github.com/ANNON17-byte',
     highlights: [
       'Custom portfolio manifesto crafted with surgical precision',
       'GSAP animations smoother than legal precedent',
@@ -119,6 +123,12 @@ function CaseHistory() {
                 <p className="font-times text-xl font-bold text-center">
                   VERDICT: {project.verdict}
                 </p>
+              </div>
+
+              <div className="bg-[#D32F2F] text-white px-6 py-3 mb-6 border-4 border-black">
+                <a className="font-times text-xl font-bold text-center" href='https://github.com/ANNON17-byte'>
+                  GITHUB: {project.github}
+                </a>
               </div>
 
               <div className="bg-[#F5E050] border-4 border-black p-6">

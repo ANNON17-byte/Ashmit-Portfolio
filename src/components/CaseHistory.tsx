@@ -4,6 +4,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Code, Star, Zap } from 'lucide-react';
 
 const projects = [
+  
+  {
+  title: 'REAL-TIME CHAT APPLICATION',
+  description: 'A secure, real-time chat web application that enables instant communication through chat rooms with live updates, authentication.',
+  period: '2026',
+  verdict: 'BUILT FOR REAL-TIME COMMUNICATION',
+  github: 'https://github.com/ANNON17-byte/Real-time-chat-application', 
+  highlights: [
+  'JWT-based user authentication with protected Socket.IO connections',
+  'Real-time messaging using WebSockets via Socket.IO',
+  'Multiple chat rooms for organized conversations',
+  ],
+
+  },
   {
     
     title: 'K-72 Agency Website Clone',
@@ -18,35 +32,21 @@ const projects = [
     
   },
   {
-  title: 'SLI ALARM — WAKE UP USING YOUR BRAIN',
-  description: 'A smart, cute alarm app that forces you to solve math problems to turn off the alarm — no brain, no snooze.',
-  period: '2025',
-  verdict: 'DISMISSED IN FAVOR OF PRODUCTIVITY',
-  github: 'https://github.com/ANNON17-byte/math-alarm', 
-  highlights: [
-    'Math-based alarm dismissal that guarantees you are awake',
-    'Multiple difficulty levels: Easy, Medium, Hard',
-    'Custom ringtone upload with default fallback alarm sound',
-    'Cute pink, cozy, mobile-first UI design',
-    'Native Android alarm scheduling with background & lock screen support',
-    'No snooze allowed without solving the math challenge'
-  ],
+  title: 'REAL-TIME LOCATION TRACKER',
+description: 'A real-time location sharing web application that allows multiple users to view live GPS locations on an interactive map and calculate distances instantly.',
+period: '2026',
+verdict: 'BUILT FOR REAL-TIME GEO TRACKING',
+github: 'https://github.com/ANNON17-byte/real-time-tracker',
+highlights: [
+  'Live location tracking using the browser Geolocation API',
+  'Real-time location updates via Socket.IO (WebSockets)',
+  'Interactive maps powered by Leaflet.js and OpenStreetMap',
+  'Simultaneous visibility of multiple connected users',
+]
 
-  },
-  {
-  
-    title: 'ASHMIT v. OBSCURITY',
-    description: 'A Legal Precedent for Excellence in Personal Branding',
-    period: '2025',
-    verdict: 'EXTRAORDINARY RESULTS ACHIEVED',
-    github: 'https://github.com/ANNON17-byte',
-    highlights: [
-      'Custom portfolio manifesto crafted with surgical precision',
-      'GSAP animations smoother than legal precedent',
-      'SEO optimized for maximum courtroom impact',
-      'Edge function contact system—justice served instantly'
-    ]
-  }
+},
+
+
 ];
 
 function CaseHistory() {
